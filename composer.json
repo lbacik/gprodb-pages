@@ -7,6 +7,10 @@
         {
             "type": "path",
             "url": "/Volumes/Sources/php/jsonhub-suite/oa-client/client-php-nextgen"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/lbacik/gprodb-landing-page-data.git"
         }
     ],
     "require": {
@@ -17,6 +21,7 @@
         "doctrine/doctrine-bundle": "^2.14",
         "doctrine/doctrine-migrations-bundle": "^3.4",
         "doctrine/orm": "^3.3",
+        "gprodb/landing-page": "^0.1.0",
         "jsonhub/oa-client-ng": "dev-main",
         "phpdocumentor/reflection-docblock": "^5.6",
         "phpstan/phpdoc-parser": "^2.1",

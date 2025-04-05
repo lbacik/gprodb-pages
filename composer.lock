@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8ff28c1d6982997b6672e8a42f45cb7a",
+    "content-hash": "2aa91bc7683a4bf84e498d526194f3aa",
     "packages": [
         {
             "name": "composer/semver",
@@ -1370,6 +1370,41 @@
             "time": "2025-03-06T22:45:56+00:00"
         },
         {
+            "name": "gprodb/landing-page",
+            "version": "v0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lbacik/gprodb-landing-page-data.git",
+                "reference": "281a03d68f024704426f4ade24d86b3d32db7191"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lbacik/gprodb-landing-page-data/zipball/281a03d68f024704426f4ade24d86b3d32db7191",
+                "reference": "281a03d68f024704426f4ade24d86b3d32db7191",
+                "shasum": ""
+            },
+            "require": {
+                "lbacik/object-collection": "^0.1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "GProDB\\": "src/GProDB/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Łukasz Bacik",
+                    "email": "mail@luka.sh"
+                }
+            ],
+            "support": {
+                "source": "https://github.com/lbacik/gprodb-landing-page-data/tree/v0.1",
+                "issues": "https://github.com/lbacik/gprodb-landing-page-data/issues"
+            },
+            "time": "2024-04-23T14:59:14+00:00"
+        },
+        {
             "name": "guzzlehttp/guzzle",
             "version": "7.9.3",
             "source": {
@@ -1757,6 +1792,47 @@
             "transport-options": {
                 "relative": false
             }
+        },
+        {
+            "name": "lbacik/object-collection",
+            "version": "v0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lbacik/object-collection.git",
+                "reference": "9d336dd6ac34e285e526002307aeffc31b7ee8bb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lbacik/object-collection/zipball/9d336dd6ac34e285e526002307aeffc31b7ee8bb",
+                "reference": "9d336dd6ac34e285e526002307aeffc31b7ee8bb",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Sushi\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Łukasz Bacik",
+                    "email": "mail@luka.sh",
+                    "homepage": "https://github.com/lbacik/object-collection"
+                }
+            ],
+            "description": "Object collection based on SPL ArrayObject class",
+            "support": {
+                "issues": "https://github.com/lbacik/object-collection/issues",
+                "source": "https://github.com/lbacik/object-collection/tree/v0.1"
+            },
+            "time": "2022-09-28T16:45:18+00:00"
         },
         {
             "name": "monolog/monolog",

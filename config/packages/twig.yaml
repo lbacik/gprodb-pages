@@ -1,5 +1,7 @@
 twig:
     file_name_pattern: '*.twig'
+    globals:
+        git_ref: '%env(GIT_REF)%'
 
 when@test:
     twig:

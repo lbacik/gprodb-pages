@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <div class="mr-4 text-end">
+        version: {{ git_ref }}
+    </div>
+
+    <div class="ml-10 mt-5">
+
+        <div class="font-semibold text-slate-700 text-xl">Projects that can be displayed with this template:</div>
+
+        <p class="text-xs text-slate-500">server: <a class="text-blue-500" href="{{ server }}">{{ server }}</a></p>
+
+        {% for definition, entities in result %}
+
+            <p class="mt-4 mb-2 font-semibold text-slate-600 text-lg">definition: <span class="text-slate-400">{{ definition }}</span></p>
+
+            {% for item in entities %}
+                <div class="pl-4">
+                    <a
+                            class="text-slate-600 hover:bg-blue-500 hover:text-slate-100 hover:rounded-md px-2 py-1"
+                            href="{{ path('app_project', {projectUuid: item.id|default('000') }) }}"
+                    >{{ item.name }}</a>
+                </div>
+            {% endfor %}
+        {% endfor %}
+
+    </div>
+{% endblock %}

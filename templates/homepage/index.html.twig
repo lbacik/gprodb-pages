@@ -20,7 +20,7 @@
                 <div class="pl-4">
                     <a
                             class="text-slate-600 hover:bg-blue-500 hover:text-slate-100 hover:rounded-md px-2 py-1"
-                            href="{{ path('app_project', {projectUuid: item.id|default('000') }) }}"
+                            href="{{ path('app_page', {pageUuid: item.id|default('000') }) }}"
                     >{{ item.name }}</a>
                 </div>
             {% endfor %}

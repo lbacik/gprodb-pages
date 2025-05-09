@@ -31,9 +31,9 @@ class HomePageController extends AbstractController
         }
 
         return $this->redirectToRoute(
-            'app_project',
+            'app_page',
             [
-                'projectUuid' => $this->defaultProjectUuid,
+                'pageUuid' => $this->defaultProjectUuid,
             ],
             301
         );

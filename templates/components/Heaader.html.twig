@@ -1,0 +1,22 @@
+{% props data %}
+<div{{ attributes }}>
+    <!-- Sticky Header -->
+    <header class="fixed top-0 w-full bg-gradient-to-r from-blue-600 to-indigo-700 z-50 h-20">
+        <div class="container mx-auto px-6 h-full flex items-center justify-between">
+            <a href="#hero" class="text-xl font-bold text-white">{{ data.meta.name }}</a>
+            <nav>
+                <ul class="flex gap-6 text-white">
+                    {% if data.about.enabled|default(false) %}
+                        <li><a href="#about" class="hover:opacity-80 transition">About</a></li>
+                    {% endif %}
+                    {% if data.newsletter.enabled|default(false) %}
+                        <li><a href="#subscribe" class="hover:opacity-80 transition">Mailing List</a></li>
+                    {% endif %}
+                    {% if data.contact.enabled|default(false) %}
+                        <li><a href="#contact" class="hover:opacity-80 transition">Contact</a></li>
+                    {% endif %}
+                </ul>
+            </nav>
+        </div>
+    </header>
+</div>

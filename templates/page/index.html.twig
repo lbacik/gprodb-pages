@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ data.meta.title }}{% endblock %}
+
+{% block body %}
+    <twig:Heaader :data="data"/>
+
+    <twig:HeroSection :data="data.hero" :isAboutEnabled="data.about.enabled|default(false)"/>
+
+    {% if data.about.enabled|default(false) %}
+        <twig:AboutSection :data="data.about"/>
+    {% endif %}
+
+    {% if data.newsletter.enabled|default(false) %}
+        <twig:MailingSection :data="data.newsletter"/>
+    {% endif %}
+
+    {% if data.contact.enabled|default(false) %}
+        <twig:ContactSection :data="data.contact"/>
+    {% endif %}
+
+    <twig:Footer />
+{% endblock %}

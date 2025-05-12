@@ -26,6 +26,19 @@
             "migrations/.gitignore"
         ]
     },
+    "huluti/altcha-bundle": {
+        "version": "1.2",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "main",
+            "version": "1.0",
+            "ref": "e3899eb5cd2fb88e882a298ac6dcd627169b3263"
+        },
+        "files": [
+            "config/packages/huluti_altcha.yaml",
+            "config/routes/huluti_altcha.yaml"
+        ]
+    },
     "phpunit/phpunit": {
         "version": "9.6",
         "recipe": {

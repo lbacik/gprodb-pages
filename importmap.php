@@ -25,4 +25,7 @@ return [
     '@hotwired/turbo' => [
         'version' => '7.3.0',
     ],
+    'altcha/dist/altcha.js' => [
+        'version' => '1.4.4',
+    ],
 ];

@@ -4,8 +4,50 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "eb8a1524abeaa70430d1fd3997fcc0c1",
+    "content-hash": "0aacada71dfa231c77bf7efcd84e2315",
     "packages": [
+        {
+            "name": "altcha-org/altcha",
+            "version": "v0.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/altcha-org/altcha-lib-php.git",
+                "reference": "0371b6bd6ac1e7e4b78e47a884e5fa3d062720e6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/altcha-org/altcha-lib-php/zipball/0371b6bd6ac1e7e4b78e47a884e5fa3d062720e6",
+                "reference": "0371b6bd6ac1e7e4b78e47a884e5fa3d062720e6",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^11.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "AltchaOrg\\Altcha\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel Regeci",
+                    "email": "536331+ovx@users.noreply.github.com"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/altcha-org/altcha-lib-php/issues",
+                "source": "https://github.com/altcha-org/altcha-lib-php/tree/v0.1.4"
+            },
+            "time": "2025-02-28T05:17:34+00:00"
+        },
         {
             "name": "composer/semver",
             "version": "3.4.3",
@@ -1805,6 +1847,72 @@
                 }
             ],
             "time": "2025-03-27T12:30:47+00:00"
+        },
+        {
+            "name": "huluti/altcha-bundle",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Huluti/altcha-bundle.git",
+                "reference": "2f12eb010cc55ac092c0351609d9015a2e6b2921"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Huluti/altcha-bundle/zipball/2f12eb010cc55ac092c0351609d9015a2e6b2921",
+                "reference": "2f12eb010cc55ac092c0351609d9015a2e6b2921",
+                "shasum": ""
+            },
+            "require": {
+                "altcha-org/altcha": "^0.1",
+                "php": ">=8.1",
+                "symfony/form": "^6.4|^7.0",
+                "symfony/framework-bundle": "^6.4|^7.0",
+                "symfony/http-client": "^6.4|^7.0",
+                "symfony/translation": "^6.4|^7.0",
+                "symfony/twig-bundle": "^6.4|^7.0",
+                "symfony/validator": "^6.4|^7.0",
+                "symfony/yaml": "^6.4|^7.0"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "^1.8",
+                "phpstan/phpstan-symfony": "^1.2",
+                "phpunit/phpunit": "^10.5",
+                "rector/rector": "^0.14.5",
+                "symfony/asset-mapper": "6.4 || ^7.0",
+                "symfony/stimulus-bundle": "^2.16"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "Huluti\\AltchaBundle\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hugo Posnic",
+                    "homepage": "https://github.com/Huluti"
+                }
+            ],
+            "description": "A simple package to help integrate Altcha on Symfony.",
+            "keywords": [
+                "ALTCHA",
+                "Symfony Bundle",
+                "bundle",
+                "captcha",
+                "form",
+                "form security",
+                "symfony",
+                "symfony-ux"
+            ],
+            "support": {
+                "issues": "https://github.com/Huluti/altcha-bundle/issues",
+                "source": "https://github.com/Huluti/altcha-bundle/tree/1.2.0"
+            },
+            "time": "2025-05-11T20:54:18+00:00"
         },
         {
             "name": "jsonhub/sdk",

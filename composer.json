@@ -22,6 +22,7 @@
         "doctrine/doctrine-migrations-bundle": "^3.4.2",
         "doctrine/orm": "^3.3.3",
         "gprodb/landing-page": "^0.2.0",
+        "huluti/altcha-bundle": "^1.2",
         "jsonhub/sdk": "^0.1.0",
         "league/commonmark": "^2.7",
         "phpdocumentor/reflection-docblock": "^5.6.2",

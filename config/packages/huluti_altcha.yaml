@@ -1,6 +1,9 @@
 huluti_altcha:
     enable: true
     hmacKey: '%env(ALTCHA_SECRET)%'
+    floating: false
+    hide_logo: false
+    hide_footer: false
 
 when@test:
     huluti_altcha:

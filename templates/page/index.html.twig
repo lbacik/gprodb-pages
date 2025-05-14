@@ -16,7 +16,7 @@
     {% endif %}
 
     {% if data.contact.enabled|default(false) %}
-        <twig:ContactSection :data="data.contact"/>
+        <twig:ContactSection :data="data.contact" :contactForm="contactForm"/>
     {% endif %}
 
     <twig:Footer />

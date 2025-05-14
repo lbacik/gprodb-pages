@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+form ul li {
+  @apply text-red-600 text-sm
+}

@@ -1,0 +1,4 @@
+contact:
+  send_error: |
+    There seems to be an issue with sending the message at the moment. 
+    Please reach out to our support team or attempt sending it again later.

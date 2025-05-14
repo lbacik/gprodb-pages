@@ -1,0 +1,34 @@
+<turbo-frame id="contact-form">
+    {% set label_class='block text-sm font-medium mb-1' %}
+    {% set input_class='w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500' %}
+    {% set element_attr={'label_attr': {'class': label_class}, 'attr': {'class': input_class}} %}
+
+    <div>
+        {{ form_start(contactForm, {
+            'attr': {
+                'class': 'space-y-6',
+            }
+        }) }}
+
+        {{ form_errors(contactForm) }}
+
+        {{ form_row(contactForm.name, element_attr) }}
+        {{ form_row(contactForm.email, element_attr) }}
+        {{ form_row(contactForm.subject, element_attr) }}
+        {{ form_row(contactForm.message, element_attr) }}
+
+        <div class="flex justify-center">
+            <div class="flex-none w-1/2">{{ form_row(contactForm.security) }}</div>
+        </div>
+
+        <div class="text-center">
+            <button type="submit"
+                    class="bg-indigo-600 text-white font-semibold px-6 py-3 rounded-lg shadow hover:bg-indigo-700 transition">
+                Send Message
+            </button>
+        </div>
+
+        {{ form_rest(contactForm) }}
+        {{ form_end(contactForm) }}
+    </div>
+</turbo-frame>

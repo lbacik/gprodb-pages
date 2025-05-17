@@ -1,0 +1,40 @@
+<turbo-frame id="newsletter-form">
+    <div>
+        {{ form_start(mailingForm) }}
+
+        <div class="mb-4">
+            {{ form_errors(mailingForm) }}
+        </div>
+
+        <div class="max-w-md mx-auto flex flex-col sm:flex-row gap-4 mb-4">
+
+            {{ form_row(mailingForm.email, {
+                'label_attr': {
+                    'class': 'hidden',
+                },
+                'attr': {
+                    'class': 'w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500',
+                    'placeholder': 'Your email address',
+                },
+                'row_attr': {
+                    'class': 'flex-grow',
+                }
+            }) }}
+
+            <button
+                    type="submit"
+                    class="bg-indigo-600 text-white font-semibold px-6 py-3 rounded-lg shadow hover:bg-indigo-700 transition"
+            >
+                Subscribe
+            </button>
+
+        </div>
+
+        <div class="flex justify-center">
+            <div class="flex-none w-1/2">{{ form_row(mailingForm.security) }}</div>
+        </div>
+
+        {{ form_rest(mailingForm) }}
+        {{ form_end(mailingForm) }}
+    </div>
+</turbo-frame>

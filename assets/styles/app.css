@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --altcha-color-border: white;
+}
+
 form ul li {
   @apply text-red-600 text-sm
 }
+

@@ -12,7 +12,7 @@
     {% endif %}
 
     {% if data.newsletter.enabled|default(false) %}
-        <twig:MailingSection :data="data.newsletter"/>
+        <twig:MailingSection :data="data.newsletter" :mailingForm="mailingForm"/>
     {% endif %}
 
     {% if data.contact.enabled|default(false) %}

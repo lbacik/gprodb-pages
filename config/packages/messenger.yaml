@@ -14,6 +14,20 @@ framework:
                     multiplier: 2
             failed: 'doctrine://default?queue_name=failed'
             # sync: 'sync://'
+            mailing:
+                dsn: '%env(MESSENGER_TRANSPORT_DSN)%'
+                serializer: messenger.transport.symfony_serializer
+                retry_strategy:
+                    max_retries: 3
+                    multiplier: 2
+                options:
+                    exchange:
+                        name: mailing
+                        type: direct
+                        default_publish_routing_key: 'input'
+                    queues:
+                        input:
+                            binding_keys: ['input']
 
         default_bus: messenger.bus.default
 
@@ -24,6 +38,8 @@ framework:
             Symfony\Component\Mailer\Messenger\SendEmailMessage: async
             Symfony\Component\Notifier\Message\ChatMessage: async
             Symfony\Component\Notifier\Message\SmsMessage: async
+
+            App\Message\MailingSubscribe: mailing
 
             # Route your messages to the transports
             # 'App\Message\YourMessage': async

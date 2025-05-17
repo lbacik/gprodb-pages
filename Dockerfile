@@ -16,6 +16,10 @@ WORKDIR /opt/app
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 RUN composer install --no-interaction --optimize-autoloader
 
+RUN bin/console tailwind:build \
+    && bin/console assets:install \
+    && bin/console asset-map:compile
+
 RUN rm -drf /var/www/html \
     && ln -s /opt/app/public /var/www/html \
     && chown -R www-data:www-data /opt/app/var \

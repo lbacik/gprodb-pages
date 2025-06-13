@@ -5,7 +5,7 @@
         <div class="flex flex-col items-center justify-center w-full space-y-10">
             <div class="container mx-auto px-6 max-w-lg">
                     <div class="text-lg mb-8 text-center">
-                        {{ data.description }}
+                        {{ data.description|markdown_to_html }}
                     </div>
                     {{ include('partial/_contact-form.html.twig') }}
             </div>

@@ -6,7 +6,7 @@
         <div class="container mx-auto px-6 text-center max-w-lg">
             <h2 class="text-3xl font-bold mb-10">Join Our Mailing List</h2>
             <p class="mb-10 text-gray-600 text-lg text-center">
-                {{ data.description }}
+                {{ data.description|markdown_to_html }}
             </p>
             {{ include('partial/_newsletter-form.html.twig') }}
         </div>
